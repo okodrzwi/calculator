@@ -1,38 +1,158 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: teal;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
+  margin: 10px auto 0px auto;
+  height: auto;
+  width: 320px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  border: solid burlywood 2px;
 }
 
-.App-link {
-  color: #61dafb;
+.button {
+  width: 80px;
+  height: 80px;
+  font-size: 32px;
+  background-color: rgb(16, 5, 56);
+  color: rgba(100, 71, 4, 0.959);
+  border: solid 1px black;
+  flex-grow: 1;
+}
+.button:hover {
+  border: solid 1px white;
+  background-color: rgb(5, 29, 56);
+  color: rgba(255, 174, 0, 0.931);
+}
+#upper-display {
+  width: 100%;
+  height: 2.4em;
+  font-size: 23px;
+  color: rgba(255, 174, 0, 0.931);
+  background-color: #2f3038;
+
+  text-align: right;
+  font-family: "VT323", monospace;
+  border: solid 1px black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#display {
+  width: 100%;
+  height: 1.2em;
+  font-size: 46px;
+  color: rgba(255, 174, 0, 0.931);
+  text-align: right;
+  background: #2f3038;
+
+  font-family: "VT323", monospace;
+  border: solid 1px black;
+}
+
+#clear {
+  position: absolute;
+  left: 390px;
+  top: 230px;
+  border-radius: 50%;
+  border-color: black;
+  color: rgba(255, 174, 0, 0.931);
+  background-color: black;
+}
+#clear:hover {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+.button-container {
+  width: 320px;
+  height: 320px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#zero {
+  order: 14;
+}
+#one {
+  order: 1;
+}
+#two {
+  order: 2;
+}
+#three {
+  order: 3;
+}
+#four {
+  order: 5;
+}
+#five {
+  order: 6;
+}
+#six {
+  order: 7;
+}
+#seven {
+  order: 9;
+}
+#eight {
+  order: 10;
+}
+#nine {
+  order: 11;
+}
+#add {
+  order: 16;
+  background-color: rgba(161, 18, 37, 0.883);
+  color: rgb(43, 83, 116);
+}
+#subtract {
+  order: 12;
+  background-color: rgba(161, 18, 37, 0.883);
+  color: rgb(43, 83, 116);
+}
+#divide {
+  order: 4;
+  background-color: rgba(161, 18, 37, 0.883);
+  color: rgb(43, 83, 116);
+}
+#multiply {
+  order: 8;
+  background-color: rgba(161, 18, 37, 0.883);
+  color: rgb(43, 83, 116);
+}
+#equals {
+  order: 15;
+  background-color: rgba(161, 18, 37, 0.883);
+  color: rgb(43, 83, 116);
+}
+#decimal {
+  order: 13;
+}
+
+#add:hover {
+  order: 16;
+  background-color: rgba(212, 26, 51, 0.883);
+  color: rgb(158, 204, 241);
+}
+#subtract:hover {
+  order: 12;
+  background-color: rgba(212, 26, 51, 0.883);
+  color: rgb(158, 204, 241);
+}
+#divide:hover {
+  order: 4;
+  background-color: rgba(212, 26, 51, 0.883);
+  color: rgb(158, 204, 241);
+}
+#multiply:hover {
+  order: 8;
+  background-color: rgba(212, 26, 51, 0.883);
+  color: rgb(158, 204, 241);
+}
+#equals:hover {
+  order: 15;
+  background-color: rgba(212, 26, 51, 0.883);
+  color: rgb(158, 204, 241);
 }
